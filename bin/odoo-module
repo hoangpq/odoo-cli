@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var genTemplate = require('../index.js');
+
+program
+  .usage('[entry]')
+  .option('--name [name]', 'Odoo module name')
+  .option('--deps --depends [web.core,web.Model]', 'Odoo module dependencies')
+  .option('--dist [directory]', 'Output directory for module')
+  .parse(process.argv);
+
+genTemplate(program.name, program.depends, program.dist);

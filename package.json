@@ -1,0 +1,34 @@
+{
+  "name": "odoo-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "A simple CLI for creating Odoo modules.",
+  "preferGlobal": true,
+  "bin": {
+    "odoo": "bin/odoo",
+    "odoo-module": "bin/odoo-module"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangpq/odoo-cli.git"
+  },
+  "keywords": [
+    "odoo",
+    "cli",
+    "nodejs"
+  ],
+  "author": "Hoang Phan <pquochoang2007@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/hoangpq/odoo-cli/issues"
+  },
+  "homepage": "https://github.com/hoangpq/odoo-cli/#readme",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "fs-extra": "^4.0.2",
+    "underscore": "^1.8.3"
+  },
+  "engines": {
+    "node": ">=6.11.3"
+  }
+}
