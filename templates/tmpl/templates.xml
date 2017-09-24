@@ -4,7 +4,7 @@
         <template id="assets_backend" name="<%= module_name %> assets" inherit_id="web.assets_backend">
             <xpath expr="." position="inside">
                 <script type="text/javascript" src="/<%= module_name %>/static/src/js/odoo.js"></script>
-                <link rel="stylesheet" type="text/less" href="/<%= module_name %>/static/src/less/odoo.less"/>>
+                <link rel="stylesheet" type="text/less" href="/<%= module_name %>/static/src/less/odoo.less"/>
             </xpath>
         </template>
     </data>
